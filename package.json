@@ -1,0 +1,21 @@
+{
+  "name": "drgwfe--run",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "@syncfusion/ej2-base": "*",
+    "@syncfusion/ej2-react-schedule": "*",
+    "axios": "^0.21.1",
+    "react": "17.0.0",
+    "react-dom": "17.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "react-scripts": "latest"
+  }
+}

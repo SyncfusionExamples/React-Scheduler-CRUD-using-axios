@@ -1,4 +1,4 @@
-import { render } from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import './index.css';
 import * as React from 'react';
 import { Ajax } from '@syncfusion/ej2-base';
@@ -98,5 +98,5 @@ export class Default extends SampleBase {
     );
   }
 }
-
-render(<Default />, document.getElementById('sample'));
+const root = createRoot(document.getElementById('sample'));
+root.render(<Default />);

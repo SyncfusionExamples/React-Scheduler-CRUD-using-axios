@@ -30,7 +30,7 @@ The .NET API provides REST endpoints for managing calendar events stored on the 
 - Make sure there is nothing running on the port 3000.
 
 #### Getting ready to run
-1. In a new terminal, navigate to the project folder `Frontend-React/`:
+1. In a new terminal, navigate to the project folder `react-frontend/`:
 2. Install application dependencies:
     ```bash
     npm install
@@ -47,7 +47,7 @@ The .NET API provides REST endpoints for managing calendar events stored on the 
 
 #### <u> Frontend Application </u>
 1. Make sure that we had completed the `frontend setup` mentioned above. 
-2. From the same path `Frontend-React/`.
+2. From the same path `react-frontend/`.
 3. Start the frontend:
     ```bash
     npm start
@@ -58,7 +58,7 @@ The .NET API provides REST endpoints for managing calendar events stored on the 
 
 ## Output Preview
 Syncfusion React Scheduler
-![FrontEnd React](./SampleOutputs/FrontEnd.png)
+![FrontEnd React Scheduler Output](/react-frontend/react-scheduler-output.png)
 *Image illustrating the Syncfusion React Scheduler* 
 
 ## Troubleshooting

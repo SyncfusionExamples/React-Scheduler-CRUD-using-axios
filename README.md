@@ -1,60 +1,61 @@
-# Getting Started with React Scheduler Component using React and .Net application
+# Syncfusion React Scheduler Integrated with Axios
 ## Description
 
-This repository showcases a full‑stack sample application demonstrating how to integrate the Syncfusion React Scheduler component into a React application that communicates with a .NET backend using Axios.<br />
-The .NET API provides REST endpoints for managing calendar events stored on the server, while the React frontend delivers a responsive scheduling interface that enables users to create, update, view, and delete events seamlessly through the Syncfusion Scheduler.
+A full‑stack sample application demonstrating how to integrate the **Syncfusion React Scheduler** with a **.NET backend** using **Axios** for performing CRUD (Create, Read, Update, Delete) operations.  
+The application features a responsive scheduling UI on the frontend and REST API–based event management on the backend.
+
+## Overview
+
+This project showcases:
+
+- A **React** frontend that uses the **Syncfusion React Scheduler** component to display and manage events.
+- A **.NET Framework** backend exposing RESTful API endpoints.
+- **Axios** for communication between the React UI and the server.
+- Complete CRUD support: create, update, delete, and retrieve events.
+- A practical example of synchronizing UI state with a server‑side database.
 
 ## Setup
 - Clone the repository to your local machine.
 
-### Backend Setup
-<u>**.Net Application**</u>
+## Backend Setup (.NET Application)
 
-#### Prerequisites
+### Prerequisites
 - .NET Framework 4.7+ / 4.8 Developer Pack
-- IIS Express software (to run .Net application)
-- Use Visual Studio
-- Make sure there is nothing running on the port 54738.
+- Visual Studio (recommended)
+- Ensure **port 54738** is not in use
 
-#### Getting ready to run 
+### Steps
 1. Open the application solution (`.sln`) file in Visual Studio.
-2. To install the needed packages
-   - In Solution Explorer, right click the Solution file and click Restore NuGet Packages.
-3. Build the solution to ensure all dependencies are resolved. (Build → Build Solution)
+2. Restore NuGet packages:  
+   **Solution Explorer → Right‑click Solution → Restore NuGet Packages**
+3. Build the solution:  
+   **Build → Build Solution**
+4. Start the backend:  
+   Press **F5** or start with the debug icon.
 
-### Frontend Setup
-<u>**React Application**</u>
+Your backend will run at: **http://localhost:54738**
 
-#### Prerequisites
+
+## Frontend Setup (React Application)
+
+### Prerequisites
 - Use Node Version >= 20.19.0
-- Make sure there is nothing running on the port 3000.
+- Ensure **port 3000** is free
 
-#### Getting ready to run
-1. In a new terminal, navigate to the project folder `react-frontend/`:
-2. Install application dependencies:
-    ```bash
-    npm install
-    ```
-
-## Running the Application
-
-#### <u> Backend Server </u>
-1. Make sure that we had completed the `backend setup` mentioned above. 
-2. Start the backend server from Visual Studio.
-    - Press F5 or Click the debug symbol manually.
-3. Server started running on the http://localhost:54738.
-
-
-#### <u> Frontend Application </u>
-1. Make sure that we had completed the `frontend setup` mentioned above. 
-2. From the same path `react-frontend/`.
-3. Start the frontend:
-    ```bash
-    npm start
-    ```
-4. Access the application by navigating to http://localhost:3000 in your web browser to view the output.
-
-<br />
+### Steps
+1. Open a terminal and navigate to:
+   ```
+   cd react-frontend/
+   ```
+2. Install dependencies:
+   ```
+   npm install
+   ```
+3. Start the React application:
+   ```
+   npm start
+   ```
+Visit the application at:  **http://localhost:3000**
 
 ## Output Preview
 Syncfusion React Scheduler
@@ -62,6 +63,10 @@ Syncfusion React Scheduler
 *Image illustrating the Syncfusion React Scheduler* 
 
 ## Troubleshooting
-- **404 PageNotFound**: Ensure the backend server running on `localhost:54738`.
-- **CORS errors**: Ensure the frontend running on `localhost:3000`.
-- If you face any issue in .Net server application, rebuild solution. (`visual studio -> build -> rebuild solution`)
+
+| Issue | Possible Cause | Solution |
+|-------|----------------|----------|
+| **404 – Page Not Found** | Backend not running | Start backend at **localhost:54738** |
+| **CORS Errors** | Frontend/backend mismatch | Ensure frontend runs at **localhost:3000** |
+| **Backend fails to respond** | Build issues | Visual Studio → **Build → Rebuild Solution** |
+| **Port conflict** | Other apps using port | Close the conflicting app or change port |

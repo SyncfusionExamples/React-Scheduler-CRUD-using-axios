@@ -21,24 +21,33 @@ This project showcases:
 
 ### Prerequisites
 - .NET 10 SDK (ASP.NET Core 10 Web API)
-- Visual Studio (recommended)
 
 ### Steps
-1. Open the application solution (`.sln`) file in Visual Studio.
-2. Restore NuGet packages:  
-   **Solution Explorer → Right‑click Solution → Restore NuGet Packages**
-3. Build the solution:  
-   **Build → Build Solution**
-4. Start the backend:  
-   Press **F5** or start with the debug icon.
+1. Go into the API folder:
+   ```bash
+   cd ScheduleApi
+   ```
+2. Restore all .NET packages: 
+  ```bash
+   dotnet restore
+   ```
+3. Update the database:
+   As this repo includes migrations, simply run
+   ```bash
+   dotnet ef database update
+   ```
+4. Run the API:
+   ```
+   dotnet run
+   ```
 
-Your backend will run at: **https://localhost:7163**
+Your backend will run at: **https://localhost:7268**
 
 ## Frontend Setup (React Application)
 
 ### Prerequisites
 - Use Node Version >= 18.x (LTS Recommended)
-- Ensure **port 3000** is free
+- Ensure **port 5173** is free
 
 ### Steps
 1. Open a terminal and navigate to:
@@ -53,7 +62,7 @@ Your backend will run at: **https://localhost:7163**
    ```
    npm start
    ```
-Visit the application at:  **http://localhost:3000**
+Visit the application at:  **http://localhost:5173**
 
 ## Output Preview
 Syncfusion React Scheduler
@@ -64,7 +73,7 @@ Syncfusion React Scheduler
 
 | Issue | Possible Cause | Solution |
 |-------|----------------|----------|
-| **404 – Page Not Found** | Backend not running | Start backend at **localhost:7163** |
-| **CORS Errors** | Frontend/backend mismatch | Ensure frontend runs at **localhost:3000** |
+| **404 – Page Not Found** | Backend not running | Start backend at **localhost:7268** |
+| **CORS Errors** | Frontend/backend mismatch | Ensure frontend runs at **localhost:5173** |
 | **Backend fails to respond** | Build issues | Visual Studio → **Build → Rebuild Solution** |
 | **Port conflict** | Other apps using port | Close the conflicting app or change port |

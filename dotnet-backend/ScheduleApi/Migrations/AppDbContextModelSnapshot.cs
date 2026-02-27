@@ -8,7 +8,7 @@ using SchedulerApi.Data;
 
 #nullable disable
 
-namespace SchedulerApi.Migrations
+namespace ScheduleApi.Migrations
 {
     [DbContext(typeof(AppDbContext))]
     partial class AppDbContextModelSnapshot : ModelSnapshot
@@ -56,7 +56,7 @@ namespace SchedulerApi.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("ScheduleEventDatas", (string)null);
+                    b.ToTable("ScheduleEventDataTable", (string)null);
                 });
 #pragma warning restore 612, 618
         }

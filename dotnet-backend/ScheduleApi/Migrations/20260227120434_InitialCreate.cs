@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace SchedulerApi.Migrations
+namespace ScheduleApi.Migrations
 {
     /// <inheritdoc />
     public partial class InitialCreate : Migration
@@ -12,7 +12,7 @@ namespace SchedulerApi.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "ScheduleEventDatas",
+                name: "ScheduleEventDataTable",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false),
@@ -28,7 +28,7 @@ namespace SchedulerApi.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_ScheduleEventDatas", x => x.Id);
+                    table.PrimaryKey("PK_ScheduleEventDataTable", x => x.Id);
                 });
         }
 
@@ -36,7 +36,7 @@ namespace SchedulerApi.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "ScheduleEventDatas");
+                name: "ScheduleEventDataTable");
         }
     }
 }

@@ -1,7 +1,7 @@
-# Syncfusion React Scheduler Integrated with Axios
+# Syncfusion React Scheduler With ASP.NET Core API Using Axios
 ## Description
 
-A full‑stack sample application demonstrating how to integrate the **Syncfusion React Scheduler** with a **.NET backend** using **Axios** for performing CRUD (Create, Read, Update, Delete) operations.  
+A full‑stack sample application demonstrating how to integrate the **Syncfusion React Scheduler** with a **ASP.NET Core Web API backend** using **Axios** for performing CRUD (Create, Read, Update, Delete) operations.  
 The application features a responsive scheduling UI on the frontend and REST API–based event management on the backend.
 
 ## Overview
@@ -9,7 +9,7 @@ The application features a responsive scheduling UI on the frontend and REST API
 This project showcases:
 
 - A **React** frontend that uses the **Syncfusion React Scheduler** component to display and manage events.
-- A **.NET Framework** backend exposing RESTful API endpoints.
+- A **ASP.NET Core 10 Web API** backend exposing RESTful API endpoints.
 - **Axios** for communication between the React UI and the server.
 - Complete CRUD support: create, update, delete, and retrieve events.
 - A practical example of synchronizing UI state with a server‑side database.
@@ -17,12 +17,11 @@ This project showcases:
 ## Setup
 - Clone the repository to your local machine.
 
-## Backend Setup (.NET Application)
+## Backend Setup (ASP.NET Core 10 Web API Application)
 
 ### Prerequisites
-- .NET Framework 4.7+ / 4.8 Developer Pack
+- .NET 10 SDK (ASP.NET Core 10 Web API)
 - Visual Studio (recommended)
-- Ensure **port 54738** is not in use
 
 ### Steps
 1. Open the application solution (`.sln`) file in Visual Studio.
@@ -33,13 +32,12 @@ This project showcases:
 4. Start the backend:  
    Press **F5** or start with the debug icon.
 
-Your backend will run at: **http://localhost:54738**
-
+Your backend will run at: **https://localhost:7163**
 
 ## Frontend Setup (React Application)
 
 ### Prerequisites
-- Use Node Version >= 20.19.0
+- Use Node Version >= 18.x (LTS Recommended)
 - Ensure **port 3000** is free
 
 ### Steps
@@ -66,7 +64,7 @@ Syncfusion React Scheduler
 
 | Issue | Possible Cause | Solution |
 |-------|----------------|----------|
-| **404 – Page Not Found** | Backend not running | Start backend at **localhost:54738** |
+| **404 – Page Not Found** | Backend not running | Start backend at **localhost:7163** |
 | **CORS Errors** | Frontend/backend mismatch | Ensure frontend runs at **localhost:3000** |
 | **Backend fails to respond** | Build issues | Visual Studio → **Build → Rebuild Solution** |
 | **Port conflict** | Other apps using port | Close the conflicting app or change port |

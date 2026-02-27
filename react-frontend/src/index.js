@@ -28,7 +28,7 @@ export class Default extends SampleBase {
 
   onBound(args) {
     if (this.flag) {
-      axios.get('http://localhost:54738/Home/GetData').then(response => {
+      axios.get('https://localhost:7163/api/Schedule/GetData').then(response => {
         var schObj = document.querySelector('.e-schedule').ej2_instances[0];
         schObj.eventSettings.dataSource = response.data;
       });
@@ -39,21 +39,21 @@ export class Default extends SampleBase {
   onBegin(args) {
     if (args.requestType === 'eventCreate') {
       axios
-        .post('http://localhost:54738/Home/Insert', args.data[0])
+        .post('https://localhost:7163/api/Schedule/Insert', args.data[0])
         .then(response => {
           var schObj = document.querySelector('.e-schedule').ej2_instances[0];
           schObj.eventSettings.dataSource = response.data;
         });
     } else if (args.requestType === 'eventChange') {
       axios
-        .post('http://localhost:54738/Home/Update', args.data)
+        .post('https://localhost:7163/api/Schedule/Update', args.data)
         .then(response => {
           var schObj = document.querySelector('.e-schedule').ej2_instances[0];
           schObj.eventSettings.dataSource = response.data;
         });
     } else if (args.requestType === 'eventRemove') {
       axios
-        .post('http://localhost:54738/Home/Delete', args.data[0])
+        .post('https://localhost:7163/api/Schedule/Delete', args.data[0])
         .then(response => {
           var schObj = document.querySelector('.e-schedule').ej2_instances[0];
           schObj.eventSettings.dataSource = response.data;
@@ -69,7 +69,7 @@ export class Default extends SampleBase {
               height="650px"
               ref={schedule => (this.scheduleObj = schedule)}
               currentView="Month"
-              selectedDate={new Date(2020, 5, 10)}
+              selectedDate={new Date(2026, 0, 1)}
               dataBound={this.onBound.bind(this)}
               actionBegin={this.onBegin.bind(this)}
             >

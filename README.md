@@ -25,7 +25,7 @@ This project showcases:
 ### Steps
 1. Go into the API folder:
    ```bash
-   cd ScheduleApi
+   cd dotnet-backend/ScheduleApi
    ```
 2. Restore all .NET packages: 
   ```bash
@@ -60,7 +60,7 @@ Your backend will run at: **https://localhost:7268**
    ```
 3. Start the React application:
    ```
-   npm start
+   npm run dev
    ```
 Visit the application at:  **http://localhost:5173**
 

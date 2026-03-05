@@ -28,10 +28,10 @@ This project showcases:
    cd dotnet-backend/ScheduleApi
    ```
 2. Restore all .NET packages: 
-  ```bash
+   ```bash
    dotnet restore
    ```
-3. Update the database:
+3. Update the database:   
    As this repo includes migrations, simply run
    ```bash
    dotnet ef database update
@@ -62,12 +62,11 @@ Your backend will run at: **https://localhost:7268**
    ```
    npm run dev
    ```
-Visit the application at:  **http://localhost:5173**
+Visit the application at: **http://localhost:5173**
 
 ## Output Preview
 Syncfusion React Scheduler
-![FrontEnd React Scheduler Output](/react-frontend/react-scheduler-output.png)
-*Image illustrating the Syncfusion React Scheduler* 
+![*Image illustrating the Syncfusion React Scheduler*](/react-frontend/react-scheduler-output.png)
 
 ## Troubleshooting
 
